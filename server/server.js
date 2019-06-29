@@ -1,7 +1,7 @@
-const express = require('express');
-const path = require('path');
-const app = express();
-const port = 3010;
+const express = require('express'); // bring in express
+const path = require('path'); // bring in path
+const app = express();  // use app variable for express methods
+const port = 3010; // save port number
 
 
 
