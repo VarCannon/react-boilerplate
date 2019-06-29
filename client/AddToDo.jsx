@@ -5,7 +5,7 @@ import App from './App.jsx';
 function AddToDo(props) {
   return (
     <div>
-    <input type="text" id="addToDo" onKeyPress={props.handleKeyPress} />
+    <input type="text" placeholder='Add Stuff?' id="addToDo" onKeyPress={props.handleKeyPress} />
     </div>
   )
 }
