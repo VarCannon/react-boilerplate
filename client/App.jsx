@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
+import AddToDo from './AddToDo.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -10,14 +11,20 @@ class App extends React.Component {
     }
   }
 
+  handleKeyPress(event) {
+    if(event.key === 'Enter'){
+      console.log('event -->', event, 'event.target.value -->',event.target.value)
+    }
+  }
+
 
 
   render() {
     return (
       <div>
         <h1>React Engaged</h1>
-        {/* {<AddToDo />}
-        {<ToDoList todos={this.state.todos} />} */}
+        {<AddToDo handleKeyPress={this.handleKeyPress.bind(this)}/>}
+        {/* {<ToDoList todos={this.state.todos} />} */}
       </div>
     );
   }
