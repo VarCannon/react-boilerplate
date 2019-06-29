@@ -1,6 +1,6 @@
-import React from ('react');
-import ReactDOM from ('react-dom');
-import axios from ('axios');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,12 +13,14 @@ class App extends React.Component {
 
 
   render() {
-    return 
-      (
-        <div>
-          {<AddToDo />}
-          {<ToDoList todos={this.state.todos} />}
-        </div>
-      )
+    return (
+      <div>
+        <h1>React Engaged</h1>
+        {/* {<AddToDo />}
+        {<ToDoList todos={this.state.todos} />} */}
+      </div>
+    );
   }
 }
+
+export default App;
